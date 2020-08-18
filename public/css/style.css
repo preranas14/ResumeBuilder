@@ -1,0 +1,214 @@
+/**************/
+/* Signup */
+
+body {
+    background-color: #E6E6FA;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #d1cebd;
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 20px;
+}
+
+.signup-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.signup-container .col-sm-6 {
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.signupbtn {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    background-color: #9F00C5;
+    color: #fff;
+    margin-left: 25%;
+}
+
+.updatebtn {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    background-color: #9F00C5;
+    color: #fff;
+}
+
+input:focus {
+    border-color: blueviolet;
+}
+
+/**************/
+/* Navbar */
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+    z-index: 2;
+}
+
+.navbar-brand {
+    margin-left: 10%;
+}
+
+.collapse div {
+    margin-left: 80%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9F00C5;
+    text-decoration: none;
+}
+
+.collapse a{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.collapse a:hover {
+    color: #9F00C5;
+    text-decoration: none;
+}
+
+/**************/
+/* User page */
+
+
+/**************/
+/* Media queries */
+
+@media(max-width: 900px) {
+    .collapse div {
+        margin-left: 5%;
+    }
+    .signupbtn {
+        margin-left: 0;
+    }
+    .resume-name {  
+        margin-left: 5%;
+    }
+    .resume-header img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/***********/
+/* Resume */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.resume-header {
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    
+    border-radius: 10px;
+    height: 300px;
+}
+
+.resume-header img {
+    margin-left: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.resume-name {  
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    color: #9F00C5;
+    margin-top: 100px;
+    margin-left: 25%;
+}
+
+.resume-name h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#eee, #035aa6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.resume-container {
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.aboutme {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.aboutme span {
+    color: #035aa6;
+}
+
+.aboutme p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.email,
+.skills,
+.location {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.email span,
+.skills span,
+.location span {
+    color: #035aa6;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.skill {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #035aa6;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 8px;
+    font-weight: 600;
+}
